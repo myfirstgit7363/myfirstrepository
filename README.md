@@ -1,5 +1,7 @@
 # 2048 Studio — Tactile Puzzle Edition
 
+▶ **바로 플레이하기**: https://myfirstgit7363.github.io/myfirstrepository/
+
 세라믹 질감의 모던한 디자인과 부드러운 타일 물리·프로시저럴 사운드를 결합한 상용 퀄리티 2048 웹 퍼즐 게임입니다. 별도 빌드 도구 없이 순수 HTML, CSS, ES Modules로 구성되어 GitHub Pages·Vercel·Cloudflare Pages 등에 즉시 배포할 수 있습니다.
 
 ## 주요 기능
