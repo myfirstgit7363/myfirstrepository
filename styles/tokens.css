@@ -1,0 +1,229 @@
+/* ==========================================================================
+   2048 Studio — Design System Tokens
+   Tactile Ceramic & Editorial Craft Palette (4 Curated Themes)
+   ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-sans: "Plus Jakarta Sans", "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Motion Curves */
+  --ease-slide: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-ui: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-slide: 135ms;
+  --dur-pop: 210ms;
+  --dur-spawn: 185ms;
+
+  /* Geometry */
+  --radius-board: 22px;
+  --radius-tile: 14px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+  --radius-btn: 12px;
+
+  /* Layout Scale */
+  --board-size: min(468px, calc(100vw - 32px));
+  --board-pad: 12px;
+  --grid-gap: 11px;
+}
+
+/* --------------------------------------------------------------------------
+   Theme 1: Porcelain Studio (Default Light)
+   Warm alabaster paper, milled limestone tray, tactile matte ceramic tiles
+   -------------------------------------------------------------------------- */
+[data-theme="porcelain"] {
+  --bg-page: #F4F1EA;
+  --bg-page-accent: #ECE7DC;
+  --surface-card: #FAF8F4;
+  --surface-card-hover: #FFFFFF;
+  --surface-board: #DFD9CE;
+  --surface-cell: #EAE5DC;
+  --surface-overlay: rgba(244, 241, 234, 0.84);
+  --surface-modal: #FAF8F4;
+
+  --border-subtle: rgba(44, 40, 37, 0.08);
+  --border-strong: rgba(44, 40, 37, 0.14);
+  --bevel-light: rgba(255, 255, 255, 0.72);
+  --bevel-dark: rgba(44, 40, 37, 0.09);
+
+  --text-primary: #1F1D1A;
+  --text-secondary: #676158;
+  --text-muted: #938C82;
+  --text-inverse: #FAF8F4;
+
+  --accent: #C85232;
+  --accent-hover: #B14426;
+  --accent-soft: rgba(200, 82, 50, 0.11);
+  --success: #2A7F62;
+  --success-soft: rgba(42, 127, 98, 0.12);
+
+  --shadow-board: inset 0 2px 6px rgba(44, 40, 37, 0.10), 0 1px 0 rgba(255, 255, 255, 0.75), 0 16px 36px -18px rgba(44, 40, 37, 0.22);
+  --shadow-card: 0 1px 2px rgba(44, 40, 37, 0.05), 0 6px 16px -8px rgba(44, 40, 37, 0.09);
+  --shadow-tile: 0 2px 5px rgba(44, 40, 37, 0.10), 0 1px 2px rgba(44, 40, 37, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.42);
+  --shadow-tile-high: 0 5px 14px rgba(44, 40, 37, 0.18), 0 2px 4px rgba(44, 40, 37, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+  /* Curated Ceramic Tile Progression */
+  --t2-bg: #FAF7F2;    --t2-fg: #2D2926;
+  --t4-bg: #EFE5D5;    --t4-fg: #2D2926;
+  --t8-bg: #F0B27A;    --t8-fg: #2C190B;
+  --t16-bg: #E57E56;   --t16-fg: #FFFDF9;
+  --t32-bg: #D9573B;   --t32-fg: #FFFDF9;
+  --t64-bg: #B63628;   --t64-fg: #FFFDF9;
+  --t128-bg: #E5B94C;  --t128-fg: #2A1F05;
+  --t256-bg: #DBA028;  --t256-fg: #2A1F05;
+  --t512-bg: #CC8419;  --t512-fg: #FFFDF9;
+  --t1024-bg: #2B8267; --t1024-fg: #FFFDF9;
+  --t2048-bg: #1E242B; --t2048-fg: #F4CB6B;
+  --t4096-bg: #1E4B7A; --t4096-fg: #F7F5F0;
+  --t8192-bg: #583B2E; --t8192-fg: #F5D487;
+}
+
+/* --------------------------------------------------------------------------
+   Theme 2: Obsidian Slate (Warm Matte Dark — zero purple/neon clichés)
+   Volcanic matte charcoal, basalt tray, luminous warm terracotta & gold tiles
+   -------------------------------------------------------------------------- */
+[data-theme="obsidian"] {
+  --bg-page: #131312;
+  --bg-page-accent: #1A1917;
+  --surface-card: #1D1C1A;
+  --surface-card-hover: #252421;
+  --surface-board: #23211E;
+  --surface-cell: #1A1917;
+  --surface-overlay: rgba(19, 19, 18, 0.84);
+  --surface-modal: #1D1C1A;
+
+  --border-subtle: rgba(255, 250, 240, 0.08);
+  --border-strong: rgba(255, 250, 240, 0.14);
+  --bevel-light: rgba(255, 250, 240, 0.07);
+  --bevel-dark: rgba(0, 0, 0, 0.45);
+
+  --text-primary: #F3EFE8;
+  --text-secondary: #A69F95;
+  --text-muted: #736D65;
+  --text-inverse: #131312;
+
+  --accent: #E2724B;
+  --accent-hover: #EC845F;
+  --accent-soft: rgba(226, 114, 75, 0.16);
+  --success: #45A884;
+  --success-soft: rgba(69, 168, 132, 0.16);
+
+  --shadow-board: inset 0 2px 8px rgba(0, 0, 0, 0.48), 0 1px 0 rgba(255, 250, 240, 0.05), 0 20px 44px -18px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 250, 240, 0.04);
+  --shadow-tile: 0 3px 8px rgba(0, 0, 0, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --shadow-tile-high: 0 6px 18px rgba(0, 0, 0, 0.52), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+
+  --t2-bg: #2C2A27;    --t2-fg: #EAE4DA;
+  --t4-bg: #3A352F;    --t4-fg: #F5EFE6;
+  --t8-bg: #BA7B4A;    --t8-fg: #FFFBF5;
+  --t16-bg: #C96543;   --t16-fg: #FFFBF5;
+  --t32-bg: #C44932;   --t32-fg: #FFFBF5;
+  --t64-bg: #9E2D24;   --t64-fg: #FFFBF5;
+  --t128-bg: #CFA342;  --t128-fg: #1C1505;
+  --t256-bg: #D99B26;  --t256-fg: #1C1505;
+  --t512-bg: #C57C19;  --t512-fg: #FFFBF5;
+  --t1024-bg: #2E8B6E; --t1024-fg: #FFFBF5;
+  --t2048-bg: #E8C15D; --t2048-fg: #17140C;
+  --t4096-bg: #2B6299; --t4096-fg: #F5F7FA;
+  --t8192-bg: #7A4E37; --t8192-fg: #FCE4A8;
+}
+
+/* --------------------------------------------------------------------------
+   Theme 3: Matcha Atelier (Botanical Stone & Warm Clay)
+   -------------------------------------------------------------------------- */
+[data-theme="matcha"] {
+  --bg-page: #EFF2EA;
+  --bg-page-accent: #E5EADC;
+  --surface-card: #F8FAF5;
+  --surface-card-hover: #FFFFFF;
+  --surface-board: #D6DDD0;
+  --surface-cell: #E4E9DF;
+  --surface-overlay: rgba(239, 242, 234, 0.85);
+  --surface-modal: #F8FAF5;
+
+  --border-subtle: rgba(34, 46, 36, 0.08);
+  --border-strong: rgba(34, 46, 36, 0.15);
+  --bevel-light: rgba(255, 255, 255, 0.72);
+  --bevel-dark: rgba(34, 46, 36, 0.09);
+
+  --text-primary: #1D261E;
+  --text-secondary: #58665A;
+  --text-muted: #849286;
+  --text-inverse: #F8FAF5;
+
+  --accent: #3D7356;
+  --accent-hover: #305E46;
+  --accent-soft: rgba(61, 115, 86, 0.12);
+  --success: #2F7D57;
+  --success-soft: rgba(47, 125, 87, 0.12);
+
+  --shadow-board: inset 0 2px 6px rgba(34, 46, 36, 0.10), 0 1px 0 rgba(255, 255, 255, 0.75), 0 16px 36px -18px rgba(34, 46, 36, 0.20);
+  --shadow-card: 0 1px 2px rgba(34, 46, 36, 0.05), 0 6px 16px -8px rgba(34, 46, 36, 0.08);
+  --shadow-tile: 0 2px 5px rgba(34, 46, 36, 0.09), 0 1px 2px rgba(34, 46, 36, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  --shadow-tile-high: 0 5px 14px rgba(34, 46, 36, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+  --t2-bg: #F8FAF4;    --t2-fg: #243026;
+  --t4-bg: #E4ECDC;    --t4-fg: #243026;
+  --t8-bg: #B9CFAF;    --t8-fg: #1C2B1E;
+  --t16-bg: #86B087;   --t16-fg: #152417;
+  --t32-bg: #548C68;   --t32-fg: #F9FCF7;
+  --t64-bg: #356B50;   --t64-fg: #F9FCF7;
+  --t128-bg: #D9AD5B;  --t128-fg: #2B1F06;
+  --t256-bg: #D48E48;  --t256-fg: #2B1705;
+  --t512-bg: #C66A43;  --t512-fg: #FFFBF7;
+  --t1024-bg: #A84A39; --t1024-fg: #FFFBF7;
+  --t2048-bg: #1E2B24; --t2048-fg: #E9C774;
+  --t4096-bg: #294E66; --t4096-fg: #F4F8FA;
+  --t8192-bg: #5B3D2C; --t8192-fg: #F5D793;
+}
+
+/* --------------------------------------------------------------------------
+   Theme 4: Sandstone Sun (Mediterranean Warm Clay & Deep Teal)
+   -------------------------------------------------------------------------- */
+[data-theme="sandstone"] {
+  --bg-page: #F6EFE6;
+  --bg-page-accent: #EDE1D2;
+  --surface-card: #FCF8F2;
+  --surface-card-hover: #FFFFFF;
+  --surface-board: #E5D6C3;
+  --surface-cell: #EFE4D6;
+  --surface-overlay: rgba(246, 239, 230, 0.85);
+  --surface-modal: #FCF8F2;
+
+  --border-subtle: rgba(66, 46, 30, 0.08);
+  --border-strong: rgba(66, 46, 30, 0.15);
+  --bevel-light: rgba(255, 255, 255, 0.72);
+  --bevel-dark: rgba(66, 46, 30, 0.09);
+
+  --text-primary: #2B2017;
+  --text-secondary: #755F4D;
+  --text-muted: #A18B78;
+  --text-inverse: #FCF8F2;
+
+  --accent: #B85535;
+  --accent-hover: #9E4528;
+  --accent-soft: rgba(184, 85, 53, 0.12);
+  --success: #267670;
+  --success-soft: rgba(38, 118, 112, 0.12);
+
+  --shadow-board: inset 0 2px 6px rgba(66, 46, 30, 0.11), 0 1px 0 rgba(255, 255, 255, 0.75), 0 16px 36px -18px rgba(66, 46, 30, 0.22);
+  --shadow-card: 0 1px 2px rgba(66, 46, 30, 0.05), 0 6px 16px -8px rgba(66, 46, 30, 0.09);
+  --shadow-tile: 0 2px 5px rgba(66, 46, 30, 0.10), 0 1px 2px rgba(66, 46, 30, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  --shadow-tile-high: 0 5px 14px rgba(66, 46, 30, 0.19), inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+  --t2-bg: #FCF8F2;    --t2-fg: #34261B;
+  --t4-bg: #F2E3CE;    --t4-fg: #34261B;
+  --t8-bg: #E8BC89;    --t8-fg: #2E1A08;
+  --t16-bg: #DE925D;   --t16-fg: #FFFBF6;
+  --t32-bg: #CC6A42;   --t32-fg: #FFFBF6;
+  --t64-bg: #AE4730;   --t64-fg: #FFFBF6;
+  --t128-bg: #3C8882;  --t128-fg: #FFFBF6;
+  --t256-bg: #276E6B;  --t256-fg: #FFFBF6;
+  --t512-bg: #1F5559;  --t512-fg: #FFFBF6;
+  --t1024-bg: #D1972C; --t1024-fg: #261804;
+  --t2048-bg: #2A1F1A; --t2048-fg: #F3CA6B;
+  --t4096-bg: #5B2E26; --t4096-fg: #FBE6B4;
+  --t8192-bg: #1A3A4A; --t8192-fg: #F5E6CA;
+}
